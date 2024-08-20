@@ -1,0 +1,15 @@
+version: "3"
+
+volumes:
+  node_modules:
+services:
+  greenbug-landing-dev:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+    container_name: ${PROJECT_NAME}
+    ports:
+      - ${DEV_HOST_PORT}:3000
+    volumes:
+      - .:/src
+      - node_modules:/src/node_modules
