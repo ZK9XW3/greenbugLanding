@@ -1,18 +1,6 @@
 <script setup>
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
     title: "Contact",
     path: "/contact",
   },
@@ -26,8 +14,8 @@ const open = ref(false);
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Nuxt</span
-          ><span class="text-slate-500">ship</span>
+          ><span class="font-bold text-slate-800">Digital</span
+          ><span class="text-primaryColor">GreenBug</span>
         </a>
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
@@ -57,27 +45,13 @@ const open = ref(false);
         class="w-full lg:w-auto mt-2 lg:flex lg:mt-0"
         :class="{ block: open, hidden: !open }"
       >
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
-          <li v-for="item of menuitems">
-            <a
-              :href="item.path"
-              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
-            >
-              {{ item.title }}
-            </a>
-          </li>
-        </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
-          >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
+          <LandingLink href="#" size="md" block>Se connecter</LandingLink>
         </div>
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
+          <LandingLink href="https://admin.digitalgreenbug.fr/home" target="_blank" size="md">Se connecter</LandingLink>
         </div>
       </div>
     </header>

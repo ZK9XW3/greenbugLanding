@@ -1,40 +1,40 @@
 <script setup>
 const features = [
   {
-    title: "Simplicité et Efficacité",
-    description:
-      "Un CMS custom crée from scratch et réalisé en Symfony/Twig.",
-    icon: "bx:bxs-briefcase",
-  },
-  {
     title: "Maintenabilité facilitée",
     description:
       "Un projet pensé pour pouvoir créer rapidement des sites simples tout en limitant le temps passé sur la maintenance.",
-    icon: "bx:bxs-bot",
+    icon: "mdi:cog",
   },
   {
     title: "Prêt à fonctionner",
     description:
       "Des fonctionnalités prêtes à l'emploi (Galerie, Blog, Discographie, Agenda...)",
-    icon: "bx:bxs-user",
+    icon: "mdi:check-circle",
   },
   {
     title: "Evolutivé",
     description:
       "Une application multi-site qui permet à tous les utilisateurs de bénéficier de chaque nouvelle fonctionnalité développée.",
-    icon: "bx:bxs-window-alt",
-  },
-  {
-    title: "Décentralisé et autonome",
-    description:
-      "Un projet self-hosted dans une optique de décentralisation et afin de ne pas dépendre de services tiers.",
-    icon: "bx:bxs-file-find",
+    icon: "mdi:application-brackets",
   },
   {
     title: "Multi-site mais indépendant",
     description:
       "Une instance front Nuxt par site. Chaque instance interroge l'API/CMS pour récupérer les données à afficher.",
-    icon: "bx:bxs-data",
+    icon: "mdi:database",
+  },
+  {
+    title: "Décentralisé et autonome",
+    description:
+      "Un projet self-hosted dans une optique de décentralisation et afin de ne pas dépendre de services tiers.",
+    icon: "mdi:web",
+  },
+  {
+    title: "Une pincée d'eco-conception",
+    description:
+      "Une approche minimaliste pour limiter l'impact écologique de l'application.",
+    icon: "mdi:flower",
   },
 ];
 </script>
@@ -42,11 +42,10 @@ const features = [
 <template>
   <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
+      Un CMS custom crée from scratch
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
+      Réalisé en Symfony/Nuxt Digital<span class="text-primaryColor">GreenBug</span> propose un outil simple et efficace pour gérer le contenu de votre site web.
     </p>
   </div>
 
