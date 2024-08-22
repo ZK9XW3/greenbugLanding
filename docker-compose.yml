@@ -3,7 +3,7 @@ services:
   greenbug-landing-prod:
     build:
       context: .
-      dockerfile: docker/Dockerfile.prod
+      dockerfile: docker/Dockerfile
     container_name: ${PROJECT_NAME}
     ports:
       - ${PROD_HOST_PORT}:3000
