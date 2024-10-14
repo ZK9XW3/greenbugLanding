@@ -10,6 +10,5 @@ definePageMeta({
     <LandingFeatures></LandingFeatures>
     <LandingProfile></LandingProfile>
     <LandingLogos></LandingLogos>
-<!--    <LandingCta></LandingCta>-->
   </LandingContainer>
 </template>
