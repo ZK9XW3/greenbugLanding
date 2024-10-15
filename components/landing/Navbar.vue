@@ -46,12 +46,12 @@ const open = ref(false);
         :class="{ block: open, hidden: !open }"
       >
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" size="md" block>Se connecter</LandingLink>
+          <LandingLink href="https://admin.digitalgreenbug.fr" target="_blank" size="md" block>Se connecter</LandingLink>
         </div>
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <LandingLink href="https://admin.digitalgreenbug.fr/home" target="_blank" size="md">Se connecter</LandingLink>
+          <LandingLink href="https://admin.digitalgreenbug.fr" target="_blank" size="md">Se connecter</LandingLink>
         </div>
       </div>
     </header>
